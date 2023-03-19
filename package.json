@@ -1,0 +1,17 @@
+{
+  "name": "mahorka_bot",
+  "version": "1.0.0",
+  "description": "mahorka_squad_bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "./selfcheck",
+    "start": "nodemon main.js"
+  },
+  "author": "raduet",
+  "license": "ISC",
+  "dependencies": {
+    "node-cron": "^3.0.2",
+    "node-telegram-bot-api": "^0.61.0",
+    "puppeteer": "^19.7.5"
+  }
+}
