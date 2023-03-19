@@ -4,7 +4,6 @@
   "description": "mahorka_squad_bot",
   "main": "main.js",
   "scripts": {
-    "test": "./selfcheck",
     "start": "nodemon main.js"
   },
   "author": "raduet",
