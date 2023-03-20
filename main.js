@@ -18,7 +18,11 @@ function update() {
         API.sendPhoto(chatId, content[date.getDay()], {caption: 'базовое расписание на ' + days[date.getDay() + 1] + ":"});
 
         (async () => {
-            const browser = await puppeteer.launch();
+            const browser = await puppeteer.launch({
+                args: ['--no-sandbox'],
+                timeout: 10000,
+                });
+            
             const page = await browser.newPage();
             await page.goto('http://чхмт.рф/zamena/spo.php?a=0');
             await page.screenshot({ path: 'zamena.png' });
