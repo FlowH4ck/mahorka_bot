@@ -41,7 +41,7 @@ function update() {
 
 }
 
-cron.schedule('* * * * *', function() {
+cron.schedule('59 20 * * *', function() {
 
     if (auto) {
 
